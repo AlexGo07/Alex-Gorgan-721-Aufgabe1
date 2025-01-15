@@ -1,9 +1,4 @@
-package parser;
 
-import log.model.Log;
-import log.model.Message;
-import log.model.Severity;
-import log.model.Visibility;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -17,7 +12,7 @@ import java.util.function.Function;
 /**
  * This is a {@link LogParser} for {@code FileType.TSV}
  */
-public class TSVLogParser implements log.parser.LogParser {
+public class TSVLogParser implements LogParser {
 
     private static TSVLogParser instance;
 
