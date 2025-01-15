@@ -12,13 +12,11 @@ public class Main {
     }
     private static void parseLogByType(FileType fileType) {
         LogParser parser = LogParserFactory.getParser(fileType);
-        String path = "logs\\logs." + fileType.name().toLowerCase();
+        String path = "evenimente.tsv" + fileType.name().toLowerCase();
 
         LogStatistic stat = new LogStatistic(parser, path);
         System.out.println("Normal print");
         stat.print();
-        System.out.println("Sorted print");
-        stat.sortedPrint();
     }
     private static void filterByLetter(char letter)
     {
